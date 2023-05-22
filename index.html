@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var numOne, numTwo, numTree, res, temp;
+function fun()
+{
+  numOne = parseInt(document.getElementById("one").value);
+  numTwo = parseInt(document.getElementById("two").value);
+  if(numOne && numTwo)
+  {
+    temp = document.getElementById("res");
+    temp.style.display = "block";
+    res = numOne + numTwo;
+    document.getElementById("add").value = res;
+    res = numOne - numTwo;
+    document.getElementById("subtract").value = res;
+    res = numOne * numTwo;
+    document.getElementById("multiply").value = res;
+    res = numOne / numTwo;
+    document.getElementById("divide").value = res;
+  }
+}
+ </script>
+</head>
+<body style="background-color: gold">
+    <!-- content goes here -->
+<p id="input">First Number: <input id="one">
+<br/><br/>
+Second Number: <input id="two"></p>
+RESULT: <input id="tree"></p>
+<p><button onclick="fun()">Addition</button>
+<button onclick="fun()">Subtraction</button>
+<button onclick="fun()">Multiply</button>
+<button onclick="fun()">Divide</button>
+<button onclick="fun()">Clear</button>
+<button onclick="fun()">About</button>
+</p>
+<p id="res" style="display:none;">
+Addition Result = <input id="add"><br/><br/>
+Subtraction Result = <input id="subtract"><br/><br/>
+Multiplication Result = <input id="multiply"><br/><br/>
+Division Result = <input id="divide"></p>
+
+</body>
+</html>
